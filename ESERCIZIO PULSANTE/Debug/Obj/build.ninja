@@ -1,4 +1,4 @@
-#Generating source browse information for project Accensione1LED
+#Generating source browse information for project AccensioneLEDpulsante
 
 
 #Abbreviations
@@ -21,7 +21,7 @@ rule browsedata
 
 #Build steps
 build main.pbi : index main.xcl
-build Accensione1LED.pbd : link main.pbi
-build Accensione1LED.pbw : browsedata Accensione1LED.pbd
+build AccensioneLEDpulsante.pbd : link main.pbi
+build AccensioneLEDpulsante.pbw : browsedata AccensioneLEDpulsante.pbd
 
 

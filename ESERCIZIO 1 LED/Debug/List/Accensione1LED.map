@@ -1,0 +1,205 @@
+###############################################################################
+#
+# IAR ELF Linker V8.50.6.265/W32 for ARM                  25/Oct/2020  18:43:12
+# Copyright 2007-2020 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\Giuseppe Riccio\Documents\LaboratorioLMM\ESERCIZIO 1
+#        LED\Debug\Exe\Accensione1LED.out
+#    Map file     =
+#        C:\Users\Giuseppe Riccio\Documents\LaboratorioLMM\ESERCIZIO 1
+#        LED\Debug\List\Accensione1LED.map
+#    Command line =
+#        -f C:\Users\GIUSEP~1\AppData\Local\Temp\EWAA29.tmp ("C:\Users\Giuseppe
+#        Riccio\Documents\LaboratorioLMM\ESERCIZIO 1 LED\Debug\Obj\main.o"
+#        --no_out_extension -o "C:\Users\Giuseppe
+#        Riccio\Documents\LaboratorioLMM\ESERCIZIO 1
+#        LED\Debug\Exe\Accensione1LED.out" --redirect _Printf=_PrintfFullNoMb
+#        --redirect _Scanf=_ScanfFullNoMb --map "C:\Users\Giuseppe
+#        Riccio\Documents\LaboratorioLMM\ESERCIZIO 1
+#        LED\Debug\List\Accensione1LED.map" --config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        8.4\arm\config\linker\ST\stm32f303xC.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor        = *
+__CPP_Exceptions = Disabled
+__CPP_Language   = C++14
+__SystemLibrary  = DLib
+__dlib_version   = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x803'ffff] { ro };
+define block CSTACK with size = 8K, alignment = 8 { };
+define block HEAP with size = 8K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'9fff] {
+          rw, block CSTACK, block HEAP };
+
+No sections matched the following patterns:
+
+  section .ccmram  in "P3"
+
+
+  Section          Kind         Address    Size  Object
+  -------          ----         -------    ----  ------
+"A0":                                      0x40
+  .intvec          ro code   0x800'0000    0x40  vector_table_M.o [4]
+                           - 0x800'0040    0x40
+
+"P1":                                     0x134
+  .text            ro code   0x800'0040    0x44  main.o [1]
+  .text            ro code   0x800'0084    0x3a  zero_init3.o [4]
+  .text            ro code   0x800'00be     0x2  vector_table_M.o [4]
+  .text            ro code   0x800'00c0    0x28  data_init.o [4]
+  .text            ro code   0x800'00e8    0x22  fpinit_M.o [3]
+  .iar.init_table  const     0x800'010c    0x10  - Linker created -
+  .rodata          const     0x800'011c     0x1  unwind_debug.o [5]
+  .text            ro code   0x800'0120    0x1e  cmain.o [4]
+  .text            ro code   0x800'013e     0x4  low_level_init.o [2]
+  .text            ro code   0x800'0142     0x4  exit.o [2]
+  .text            ro code   0x800'0148     0xa  cexit.o [4]
+  .text            ro code   0x800'0154    0x14  exit.o [5]
+  .text            ro code   0x800'0168     0xc  cstartup_M.o [4]
+  .rodata          const     0x800'0174     0x0  zero_init3.o [4]
+                           - 0x800'0174   0x134
+
+"P2", part 1 of 2:                          0x4
+  .bss             zero     0x2000'0000     0x4  main.o [1]
+                          - 0x2000'0004     0x4
+
+"P2", part 2 of 2:                       0x2000
+  CSTACK                    0x2000'0008  0x2000  <Block>
+    CSTACK         uninit   0x2000'0008  0x2000  <Block tail>
+                          - 0x2000'2008  0x2000
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x800'0174   0x803'ffff  0x3'fe8c
+  0x2000'0004  0x2000'0007       0x4
+  0x2000'2008  0x2000'9fff    0x7ff8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x4:
+          0x2000'0000   0x4
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data
+    ------            -------  -------  -------
+command line/config:
+    -------------------------------------------
+    Total:
+
+C:\Users\Giuseppe Riccio\Documents\LaboratorioLMM\ESERCIZIO 1 LED\Debug\Obj: [1]
+    main.o                 68                 4
+    -------------------------------------------
+    Total:                 68                 4
+
+dl7M_tln.a: [2]
+    exit.o                  4
+    low_level_init.o        4
+    -------------------------------------------
+    Total:                  8
+
+m7M_tls.a: [3]
+    fpinit_M.o             34
+    -------------------------------------------
+    Total:                 34
+
+rt7M_tl.a: [4]
+    cexit.o                10
+    cmain.o                30
+    cstartup_M.o           12
+    data_init.o            40
+    vector_table_M.o       66
+    zero_init3.o           58
+    -------------------------------------------
+    Total:                216
+
+shb_l.a: [5]
+    exit.o                 20
+    unwind_debug.o                   1
+    -------------------------------------------
+    Total:                 20        1
+
+    Gaps                    7        2
+    Linker created                  16    8'192
+-----------------------------------------------
+    Grand Total:          353       19    8'196
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address  Size  Type      Object
+-----                       -------  ----  ----      ------
+.iar.init_table$$Base    0x800'010c         --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'011c         --   Gb  - Linker created -
+?main                    0x800'0121        Code  Gb  cmain.o [4]
+CSTACK$$Base            0x2000'0008         --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'2008         --   Gb  - Linker created -
+Region$$Table$$Base      0x800'010c         --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'011c         --   Gb  - Linker created -
+__cmain                  0x800'0121        Code  Gb  cmain.o [4]
+__exit                   0x800'0155  0x14  Code  Gb  exit.o [5]
+__iar_data_init3         0x800'00c1  0x28  Code  Gb  data_init.o [4]
+__iar_debug_exceptions   0x800'011c   0x1  Data  Gb  unwind_debug.o [5]
+__iar_init_vfp           0x800'00e9        Code  Gb  fpinit_M.o [3]
+__iar_program_start      0x800'0169        Code  Gb  cstartup_M.o [4]
+__iar_zero_init3         0x800'0085  0x3a  Code  Gb  zero_init3.o [4]
+__low_level_init         0x800'013f   0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000        Data  Gb  vector_table_M.o [4]
+_call_main               0x800'012d        Code  Gb  cmain.o [4]
+_exit                    0x800'0149        Code  Gb  cexit.o [4]
+_main                    0x800'013b        Code  Gb  cmain.o [4]
+exit                     0x800'0143   0x4  Code  Gb  exit.o [2]
+main                     0x800'0041  0x44  Code  Gb  main.o [1]
+puntatore               0x2000'0000   0x4  Data  Gb  main.o [1]
+
+
+[1] = C:\Users\Giuseppe Riccio\Documents\LaboratorioLMM\ESERCIZIO 1 LED\Debug\Obj
+[2] = dl7M_tln.a
+[3] = m7M_tls.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+    353 bytes of readonly  code memory
+     19 bytes of readonly  data memory
+  8'196 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
