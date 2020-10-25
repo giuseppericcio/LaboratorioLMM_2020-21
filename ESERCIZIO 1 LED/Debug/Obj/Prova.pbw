@@ -1,0 +1,114 @@
+[
+  {
+    "ID": "c:main.c@8@macro@RCCENAHB",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "RCCENAHB",
+    "location": {
+      "column": "9",
+      "line": "1",
+      "path": "C:\\Users\\Giuseppe Riccio\\Documents\\LMM\\main.c"
+    },
+    "name": "RCCENAHB",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@54@macro@GPIOAMODER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIOAMODER",
+    "location": {
+      "column": "9",
+      "line": "2",
+      "path": "C:\\Users\\Giuseppe Riccio\\Documents\\LMM\\main.c"
+    },
+    "name": "GPIOAMODER",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@102@macro@GPIOAIDR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIOAIDR",
+    "location": {
+      "column": "9",
+      "line": "3",
+      "path": "C:\\Users\\Giuseppe Riccio\\Documents\\LMM\\main.c"
+    },
+    "name": "GPIOAIDR",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@148@macro@GPIOEMODER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIOEMODER",
+    "location": {
+      "column": "9",
+      "line": "4",
+      "path": "C:\\Users\\Giuseppe Riccio\\Documents\\LMM\\main.c"
+    },
+    "name": "GPIOEMODER",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@196@macro@GPIOEODR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIOEODR",
+    "location": {
+      "column": "9",
+      "line": "5",
+      "path": "C:\\Users\\Giuseppe Riccio\\Documents\\LMM\\main.c"
+    },
+    "name": "GPIOEODR",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@puntatore",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "puntatore",
+    "location": {
+      "column": "15",
+      "line": "7",
+      "path": "C:\\Users\\Giuseppe Riccio\\Documents\\LMM\\main.c"
+    },
+    "name": "puntatore",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@IDR",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "IDR",
+    "location": {
+      "column": "14",
+      "line": "8",
+      "path": "C:\\Users\\Giuseppe Riccio\\Documents\\LMM\\main.c"
+    },
+    "name": "IDR",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int main(void)",
+    "location": {
+      "column": "5",
+      "line": "10",
+      "path": "C:\\Users\\Giuseppe Riccio\\Documents\\LMM\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  }
+]
