@@ -5,32 +5,29 @@
 #define GPIOEODR (unsigned int*) 0x48001014;
 
 unsigned int *puntatore;
-unsigned int IDR;
+unsigned int IDR0;
 
 int main()
 {
 
   puntatore = RCCENAHB;         //RCC AHB enable register (pag. 42)
-  *puntatore |= 1<<17;          //per cambiare solo il bit d'interesse
-  puntatore = GPIOAMODER;
-  *puntatore |= 0x00000000;
-  puntatore = GPIOAIDR;
-  IDR = *puntatore;
-  IDR &= 1<<0;
-  if (IDR == 1)
+  *puntatore |= 1<<17;          //Per cambiare solo il bit d'interesse
+  puntatore = GPIOAMODER;       //Registro base GPIOA (pag. 42)
+  puntatore = GPIOAIDR;         //Registro GPIOA Input Data Register
+  IDR0 = *puntatore;             //Valore dell'IDR
+  IDR0 &= 1<<0;                  //Verifico se IDR0 è alto, cioè se il pulsante è premuto
+  if (IDR0 == 1)
   {
     puntatore = RCCENAHB;       //RCC AHB enable register (pag. 42)
-    *puntatore |= 1<<21;        //per cambiare solo il bit d'interesse
+    *puntatore |= 1<<21;        //Per cambiare solo il bit d'interesse
     puntatore = GPIOEMODER;     //Registro base GPIOE (pag. 42)
-    *puntatore |= 1<<16;        //per cambiare solo il bit d'interesse
-    puntatore = GPIOEODR;       //Registro GPIO Output Data Register
-    *puntatore |= 1<<8;         //per cambiare solo il bit d'interesse
+    *puntatore |= 1<<16;        //Per cambiare solo il bit d'interesse
+    puntatore = GPIOEODR;       //Registro GPIOE Output Data Register
+    *puntatore |= 1<<8;         //Per cambiare solo il bit d'interesse
     puntatore = GPIOEMODER;     //Registro base GPIOE (pag. 42)
-    *puntatore |= 1<<18;        //per cambiare solo il bit d'interesse
-    puntatore = GPIOEODR;       //Registro GPIO Output Data Register
-    *puntatore |= 1<<9;         //per cambiare solo il bit d'interesse
-    puntatore = GPIOEODR;       //Registro GPIO Output Data Register
-    *puntatore &= ~(1<<8);      //per cambiare solo il bit d'interesse
+    *puntatore |= 1<<18;        //Per cambiare solo il bit d'interesse
+    puntatore = GPIOEODR;       //Registro GPIOE Output Data Register
+    *puntatore |= 1<<9;         //Per cambiare solo il bit d'interesse
   }
   while(1);
   return 0;

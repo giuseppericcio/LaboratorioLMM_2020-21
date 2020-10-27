@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.50.6.265/W32 for ARM                  25/Oct/2020  18:57:19
+# IAR ELF Linker V8.50.6.265/W32 for ARM                  27/Oct/2020  09:21:17
 # Copyright 2007-2020 IAR Systems AB.
 #
 #    Output file  =
@@ -10,7 +10,7 @@
 #        C:\Users\Giuseppe Riccio\Documents\LaboratorioLMM\ESERCIZIO
 #        PULSANTE\Debug\List\AccensioneLEDpulsante.map
 #    Command line =
-#        -f C:\Users\GIUSEP~1\AppData\Local\Temp\EW96E0.tmp ("C:\Users\Giuseppe
+#        -f C:\Users\GIUSEP~1\AppData\Local\Temp\EWE7E5.tmp ("C:\Users\Giuseppe
 #        Riccio\Documents\LaboratorioLMM\ESERCIZIO PULSANTE\Debug\Obj\main.o"
 #        --no_out_extension -o "C:\Users\Giuseppe
 #        Riccio\Documents\LaboratorioLMM\ESERCIZIO
@@ -64,21 +64,21 @@ No sections matched the following patterns:
   .intvec          ro code   0x800'0000    0x40  vector_table_M.o [4]
                            - 0x800'0040    0x40
 
-"P1":                                     0x19c
-  .text            ro code   0x800'0040    0xb0  main.o [1]
-  .text            ro code   0x800'00f0    0x3a  zero_init3.o [4]
-  .text            ro code   0x800'012a     0x2  vector_table_M.o [4]
-  .text            ro code   0x800'012c    0x28  data_init.o [4]
-  .text            ro code   0x800'0154    0x22  fpinit_M.o [3]
-  .iar.init_table  const     0x800'0178    0x10  - Linker created -
-  .text            ro code   0x800'0188    0x1e  cmain.o [4]
-  .text            ro code   0x800'01a6     0x4  low_level_init.o [2]
-  .text            ro code   0x800'01aa     0x4  exit.o [2]
-  .text            ro code   0x800'01b0     0xa  cexit.o [4]
-  .text            ro code   0x800'01bc    0x14  exit.o [5]
-  .text            ro code   0x800'01d0     0xc  cstartup_M.o [4]
-  .rodata          const     0x800'01dc     0x0  zero_init3.o [4]
-                           - 0x800'01dc   0x19c
+"P1":                                     0x184
+  .text            ro code   0x800'0040    0x98  main.o [1]
+  .text            ro code   0x800'00d8    0x3a  zero_init3.o [4]
+  .text            ro code   0x800'0112     0x2  vector_table_M.o [4]
+  .text            ro code   0x800'0114    0x28  data_init.o [4]
+  .text            ro code   0x800'013c    0x22  fpinit_M.o [3]
+  .iar.init_table  const     0x800'0160    0x10  - Linker created -
+  .text            ro code   0x800'0170    0x1e  cmain.o [4]
+  .text            ro code   0x800'018e     0x4  low_level_init.o [2]
+  .text            ro code   0x800'0192     0x4  exit.o [2]
+  .text            ro code   0x800'0198     0xa  cexit.o [4]
+  .text            ro code   0x800'01a4    0x14  exit.o [5]
+  .text            ro code   0x800'01b8     0xc  cstartup_M.o [4]
+  .rodata          const     0x800'01c4     0x0  zero_init3.o [4]
+                           - 0x800'01c4   0x184
 
 "P2", part 1 of 2:                          0x8
   .bss             zero     0x2000'0000     0x4  main.o [1]
@@ -94,7 +94,7 @@ Unused ranges:
 
          From           To      Size
          ----           --      ----
-   0x800'01dc   0x803'ffff  0x3'fe24
+   0x800'01c4   0x803'ffff  0x3'fe3c
   0x2000'2008  0x2000'9fff    0x7ff8
 
 
@@ -121,9 +121,9 @@ command line/config:
     Total:
 
 C:\Users\Giuseppe Riccio\Documents\LaboratorioLMM\ESERCIZIO PULSANTE\Debug\Obj: [1]
-    main.o                176                 8
+    main.o                152                 8
     -------------------------------------------
-    Total:                176                 8
+    Total:                152                 8
 
 dl7M_tln.a: [2]
     exit.o                  4
@@ -154,7 +154,7 @@ shb_l.a: [5]
     Gaps                    4        2
     Linker created                  16    8'192
 -----------------------------------------------
-    Grand Total:          458       18    8'200
+    Grand Total:          434       18    8'200
 
 
 *******************************************************************************
@@ -163,27 +163,27 @@ shb_l.a: [5]
 
 Entry                       Address  Size  Type      Object
 -----                       -------  ----  ----      ------
-.iar.init_table$$Base    0x800'0178         --   Gb  - Linker created -
-.iar.init_table$$Limit   0x800'0188         --   Gb  - Linker created -
-?main                    0x800'0189        Code  Gb  cmain.o [4]
+.iar.init_table$$Base    0x800'0160         --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'0170         --   Gb  - Linker created -
+?main                    0x800'0171        Code  Gb  cmain.o [4]
 CSTACK$$Base            0x2000'0008         --   Gb  - Linker created -
 CSTACK$$Limit           0x2000'2008         --   Gb  - Linker created -
-IDR                     0x2000'0004   0x4  Data  Gb  main.o [1]
-Region$$Table$$Base      0x800'0178         --   Gb  - Linker created -
-Region$$Table$$Limit     0x800'0188         --   Gb  - Linker created -
-__cmain                  0x800'0189        Code  Gb  cmain.o [4]
-__exit                   0x800'01bd  0x14  Code  Gb  exit.o [5]
-__iar_data_init3         0x800'012d  0x28  Code  Gb  data_init.o [4]
-__iar_init_vfp           0x800'0155        Code  Gb  fpinit_M.o [3]
-__iar_program_start      0x800'01d1        Code  Gb  cstartup_M.o [4]
-__iar_zero_init3         0x800'00f1  0x3a  Code  Gb  zero_init3.o [4]
-__low_level_init         0x800'01a7   0x4  Code  Gb  low_level_init.o [2]
+IDR0                    0x2000'0004   0x4  Data  Gb  main.o [1]
+Region$$Table$$Base      0x800'0160         --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'0170         --   Gb  - Linker created -
+__cmain                  0x800'0171        Code  Gb  cmain.o [4]
+__exit                   0x800'01a5  0x14  Code  Gb  exit.o [5]
+__iar_data_init3         0x800'0115  0x28  Code  Gb  data_init.o [4]
+__iar_init_vfp           0x800'013d        Code  Gb  fpinit_M.o [3]
+__iar_program_start      0x800'01b9        Code  Gb  cstartup_M.o [4]
+__iar_zero_init3         0x800'00d9  0x3a  Code  Gb  zero_init3.o [4]
+__low_level_init         0x800'018f   0x4  Code  Gb  low_level_init.o [2]
 __vector_table           0x800'0000        Data  Gb  vector_table_M.o [4]
-_call_main               0x800'0195        Code  Gb  cmain.o [4]
-_exit                    0x800'01b1        Code  Gb  cexit.o [4]
-_main                    0x800'01a3        Code  Gb  cmain.o [4]
-exit                     0x800'01ab   0x4  Code  Gb  exit.o [2]
-main                     0x800'0041  0xb0  Code  Gb  main.o [1]
+_call_main               0x800'017d        Code  Gb  cmain.o [4]
+_exit                    0x800'0199        Code  Gb  cexit.o [4]
+_main                    0x800'018b        Code  Gb  cmain.o [4]
+exit                     0x800'0193   0x4  Code  Gb  exit.o [2]
+main                     0x800'0041  0x98  Code  Gb  main.o [1]
 puntatore               0x2000'0000   0x4  Data  Gb  main.o [1]
 
 
@@ -193,7 +193,7 @@ puntatore               0x2000'0000   0x4  Data  Gb  main.o [1]
 [4] = rt7M_tl.a
 [5] = shb_l.a
 
-    458 bytes of readonly  code memory
+    434 bytes of readonly  code memory
      18 bytes of readonly  data memory
   8'200 bytes of readwrite data memory
 
