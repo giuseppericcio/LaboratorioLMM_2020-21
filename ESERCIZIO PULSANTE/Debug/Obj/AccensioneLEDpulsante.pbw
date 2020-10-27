@@ -84,16 +84,16 @@
     "scope": null
   },
   {
-    "ID": "c:@IDR",
+    "ID": "c:@IDR0",
     "What": "Variable",
     "defdec": "Dec",
-    "display": "IDR",
+    "display": "IDR0",
     "location": {
       "column": "14",
       "line": "8",
       "path": "C:\\Users\\Giuseppe Riccio\\Documents\\LaboratorioLMM\\ESERCIZIO PULSANTE\\main.c"
     },
-    "name": "IDR",
+    "name": "IDR0",
     "origin": "project_file",
     "scope": null
   },

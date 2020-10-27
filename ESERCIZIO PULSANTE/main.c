@@ -12,7 +12,6 @@ int main()
 
   puntatore = RCCENAHB;         //RCC AHB enable register (pag. 42)
   *puntatore |= 1<<17;          //Per cambiare solo il bit d'interesse
-  puntatore = GPIOAMODER;       //Registro base GPIOA (pag. 42)
   puntatore = GPIOAIDR;         //Registro GPIOA Input Data Register
   IDR0 = *puntatore;             //Valore dell'IDR
   IDR0 &= 1<<0;                  //Verifico se IDR0 è alto, cioè se il pulsante è premuto
