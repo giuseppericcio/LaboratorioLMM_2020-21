@@ -8,11 +8,11 @@ int main()
 {
 
   puntatore = RCCENAHB;       //RCC AHB enable register (pag. 42)
-  *puntatore |= 1<<21;        //per cambiare solo il bit d'interesse
+  *puntatore |= 1<<21;        //Abilito il Clock del GPIOE
   puntatore = GPIOEMODER;     //Registro base GPIOE (pag. 42)
-  *puntatore |= 1<<16;        //per cambiare solo il bit d'interesse
+  *puntatore |= 1<<16;        //Abilito il PE8 come general output
   puntatore = GPIOEODR;       //Registro GPIO Output Data Register
-  *puntatore |= 1<<8;         //per cambiare solo il bit d'interesse
+  *puntatore |= 1<<8;         //Accendo il LED BLU
 
   while(1);
   return 0;

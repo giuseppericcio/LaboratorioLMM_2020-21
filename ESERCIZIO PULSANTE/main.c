@@ -1,34 +1,24 @@
-#define RCCENAHB (unsigned int*) 0x40021014;
-#define GPIOAMODER (unsigned int*) 0x48000000;
-#define GPIOAIDR (unsigned int*) 0x48000010;
-#define GPIOEMODER (unsigned int*) 0x48001000;
-#define GPIOEODR (unsigned int*) 0x48001014;
+#include <stm32f30x.h>
 
 unsigned int *puntatore;
-unsigned int IDR0;
 
 int main()
 {
-
-  puntatore = RCCENAHB;         //RCC AHB enable register (pag. 42)
-  *puntatore |= 1<<17;          //Per cambiare solo il bit d'interesse
-  puntatore = GPIOAIDR;         //Registro GPIOA Input Data Register
-  IDR0 = *puntatore;             //Valore dell'IDR
-  IDR0 &= 1<<0;                  //Verifico se IDR0 è alto, cioè se il pulsante è premuto
-  if (IDR0 == 1)
-  {
-    puntatore = RCCENAHB;       //RCC AHB enable register (pag. 42)
-    *puntatore |= 1<<21;        //Per cambiare solo il bit d'interesse
-    puntatore = GPIOEMODER;     //Registro base GPIOE (pag. 42)
-    *puntatore |= 1<<16;        //Per cambiare solo il bit d'interesse
-    puntatore = GPIOEODR;       //Registro GPIOE Output Data Register
-    *puntatore |= 1<<8;         //Per cambiare solo il bit d'interesse
-    puntatore = GPIOEMODER;     //Registro base GPIOE (pag. 42)
-    *puntatore |= 1<<18;        //Per cambiare solo il bit d'interesse
-    puntatore = GPIOEODR;       //Registro GPIOE Output Data Register
-    *puntatore |= 1<<9;         //Per cambiare solo il bit d'interesse
-  }
-  while(1);
+ 
+  RCC-> AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOEEN;      //Abilito il Clock del GPIOA e del GPIOE
+  GPIOE-> MODER |= 1<<16;                                       //Imposto il PE8 come General Output
+  GPIOA-> MODER &= ~(GPIO_MODER_MODER0);                        //Imposto il PA0 in modalità Input
+ 
+  while(1){
+    if ((GPIOA-> IDR & GPIO_IDR_0) == GPIO_IDR_0)               //Verifico se il pulsante USER è premuto
+    {
+      GPIOE-> ODR |= 1<<8;         //Accendo il lED blu
+    }
+    else 
+    {
+     GPIOE-> ODR &= 0xfffffeff;    //Spengo il LED blu
+    }
+  };
   return 0;
   
 }
