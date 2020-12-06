@@ -858,7 +858,7 @@
             <IarPane-34098>
                 <expressions>
                     <item>flag</item>
-                    <item></item>
+                    <item />
                 </expressions>
                 <col-names>
                     <item>Expression</item>

@@ -1,23 +1,23 @@
-"C:\Users\Giuseppe Riccio\Documents\LaboratorioLMM\Libreria\system_stm32f30x.c"
+"C:\Users\GiuseppeRiccio\Documents\LaboratorioLMM\Libreria\system_stm32f30x.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\Users\Giuseppe Riccio\Documents\LaboratorioLMM\INTERRUZIONI\Debug\Obj\system_stm32f30x.pbi.dep
+C:\Users\GiuseppeRiccio\Documents\LaboratorioLMM\INTERRUZIONI\Debug\Obj\system_stm32f30x.pbi.dep
 -o
 system_stm32f30x.pbi
 -I
-C:\Users\Giuseppe Riccio\Documents\LaboratorioLMM\Libreria
+C:\Users\GiuseppeRiccio\Documents\LaboratorioLMM\Libreria
 -I
-C:\Users\Giuseppe Riccio\Documents\LaboratorioLMM\INTERRUZIONI\..\Libreria\
+C:\Users\GiuseppeRiccio\Documents\LaboratorioLMM\INTERRUZIONI\..\Libreria\
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c
 -I
-C:\Users\Giuseppe Riccio\Documents\LaboratorioLMM\Libreria
+C:\Users\GiuseppeRiccio\Documents\LaboratorioLMM\Libreria
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

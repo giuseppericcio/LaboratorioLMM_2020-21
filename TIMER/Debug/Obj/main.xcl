@@ -1,23 +1,23 @@
-"C:\Users\Giuseppe Riccio\Documents\LaboratorioLMM\TIMER\main.c"
+"C:\Users\GiuseppeRiccio\Documents\LaboratorioLMM\TIMER\main.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\Users\Giuseppe Riccio\Documents\LaboratorioLMM\TIMER\Debug\Obj\main.pbi.dep
+C:\Users\GiuseppeRiccio\Documents\LaboratorioLMM\TIMER\Debug\Obj\main.pbi.dep
 -o
 main.pbi
 -I
-C:\Users\Giuseppe Riccio\Documents\LaboratorioLMM\TIMER
+C:\Users\GiuseppeRiccio\Documents\LaboratorioLMM\TIMER
 -I
-C:\Users\Giuseppe Riccio\Documents\LaboratorioLMM\TIMER\..\Libreria\
+C:\Users\GiuseppeRiccio\Documents\LaboratorioLMM\TIMER\..\Libreria\
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c
 -I
-C:\Users\Giuseppe Riccio\Documents\LaboratorioLMM\Libreria
+C:\Users\GiuseppeRiccio\Documents\LaboratorioLMM\Libreria
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0
