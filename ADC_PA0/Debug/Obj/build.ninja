@@ -21,7 +21,9 @@ rule browsedata
 
 #Build steps
 build main.pbi : index main.xcl
-build ADC_PA0.pbd : link main.pbi
+build stm32f30x_it.pbi : index stm32f30x_it.xcl
+build system_stm32f30x.pbi : index system_stm32f30x.xcl
+build ADC_PA0.pbd : link main.pbi stm32f30x_it.pbi system_stm32f30x.pbi
 build ADC_PA0.pbw : browsedata ADC_PA0.pbd
 
 

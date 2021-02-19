@@ -1,15 +1,15 @@
-"C:\Users\Giuseppe Riccio\Documents\LaboratorioLMM\ESERCIZIO 2 LED\main.c"
+"C:\Users\GiuseppeRiccio\Documents\LaboratorioLMM\ESERCIZIO 2 LED\main.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\Users\Giuseppe Riccio\Documents\LaboratorioLMM\ESERCIZIO 2 LED\Debug\Obj\main.pbi.dep
+C:\Users\GiuseppeRiccio\Documents\LaboratorioLMM\ESERCIZIO 2 LED\Debug\Obj\main.pbi.dep
 -o
 main.pbi
 -I
-C:\Users\Giuseppe Riccio\Documents\LaboratorioLMM\ESERCIZIO 2 LED
+C:\Users\GiuseppeRiccio\Documents\LaboratorioLMM\ESERCIZIO 2 LED
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc
 -I
