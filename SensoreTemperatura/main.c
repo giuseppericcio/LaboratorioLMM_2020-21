@@ -1,15 +1,18 @@
 #include <stm32f30x.h>
 
+#define V 1.52
+#define slope 4.6
+
 float tensione;
+float temperatura; 
 
 void main()
 {
   //Abilitazione clock di ADC12 e GPIOA
   RCC->AHBENR |= RCC_AHBENR_ADC12EN;
-  RCC->AHBENR |= RCC_AHBENR_GPIOAEN;
   
-  //Imposto PA0 in modalità analogica
-  GPIOA->MODER |= GPIO_MODER_MODER0;
+  //Abilitazione del sensore di temperatura
+  ADC1_2->CCR |= ADC12_CCR_TSEN;
   
   //Imposto l'ADC1
   //Regolatore di tensione
@@ -30,9 +33,9 @@ void main()
   
   //Configurazione ADC
   ADC1->CFGR |= ADC_CFGR_CONT;
-  ADC1->SQR1 = ADC_SQR1_SQ1_0;
+  ADC1->SQR1 = ADC_SQR1_SQ1_2;
   ADC1->SQR1 &= ~ADC_SQR1_L;
-  ADC1->SMPR1 |= ADC_SMPR1_SMP1;
+  ADC1->SMPR2 |= ADC_SMPR2_SMP16;
   
   //Conversione
   ADC1->CR |= ADC_CR_ADSTART;
@@ -43,6 +46,8 @@ void main()
     while((ADC1->ISR & ADC_ISR_EOC) != ADC_ISR_EOC);
     
     tensione = ADC1->DR*(3.0/4096.0); //tensione = conteggi*(VDD/2^N)
+    
+    temperatura = ((V - tensione)/slope) + 25;
     
   }
 }
