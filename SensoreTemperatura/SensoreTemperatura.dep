@@ -5,77 +5,79 @@
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\Debug\Obj\SensoreTemperatura.pbd</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.xcl</file>
-            <file>$PROJ_DIR$\Debug\Obj\system_stm32f30x.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm32f30x_it.xcl</file>
-            <file>$PROJ_DIR$\Debug\Obj\startup_stm32f30x.o</file>
-            <file>$PROJ_DIR$\..\Libreria\startup_stm32f30x.s</file>
-            <file>$PROJ_DIR$\Debug\Obj\system_stm32f30x.xcl</file>
-            <file>$PROJ_DIR$\..\Libreria\stm32f30x.h</file>
-            <file>$PROJ_DIR$\Debug\Exe\SensoreTemperatura.out</file>
-            <file>$PROJ_DIR$\main.c</file>
-            <file>$PROJ_DIR$\..\Libreria\system_stm32f30x.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
             <file>$PROJ_DIR$\..\Libreria\stm32f30x_it.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm32f30x_it.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$TOOLKIT_DIR$\config\linker\ST\stm32f303xC.icf</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
-            <file>$PROJ_DIR$\..\Libreria\core_cm4_simd.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\..\Libreria\system_stm32f30x.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\SensoreTemperatura.pbd</file>
+            <file>$PROJ_DIR$\..\Libreria\startup_stm32f30x.s</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\..\Libreria\stm32f30x.h</file>
             <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32f30x_it.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$TOOLKIT_DIR$\config\linker\ST\stm32f303xC.icf</file>
+            <file>$PROJ_DIR$\Debug\Exe\SensoreTemperatura.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32f30x_it.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_stm32f30x.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_stm32f30x.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
             <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\..\Libreria\core_cmInstr.h</file>
             <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
             <file>$PROJ_DIR$\..\Libreria\core_cmFunc.h</file>
-            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-            <file>$PROJ_DIR$\..\Libreria\core_cmInstr.h</file>
-            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
             <file>$PROJ_DIR$\..\Libreria\system_stm32f30x.h</file>
-            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
             <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+            <file>$PROJ_DIR$\..\Libreria\core_cm4_simd.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_stm32f30x.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
             <file>$PROJ_DIR$\Debug\List\SensoreTemperatura.map</file>
             <file>$PROJ_DIR$\Debug\Obj\stm32f30x_it.__cstat.et</file>
             <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
             <file>$PROJ_DIR$\Debug\Obj\system_stm32f30x.__cstat.et</file>
             <file>$PROJ_DIR$\..\Libreria\core_cm4.h</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
         </outputs>
         <file>
-            <name>$PROJ_DIR$\..\Libreria\startup_stm32f30x.s</name>
+            <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
-                    <name>AARM</name>
-                    <file> 4</file>
+                    <name>ILINK</name>
+                    <file> 30 11</file>
                 </tool>
             </outputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\Debug\Exe\SensoreTemperatura.out</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 31</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 15 11 4 13 2 25 29 27 22</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\main.c</name>
+            <name>$PROJ_DIR$\..\Libreria\stm32f30x_it.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 11</file>
+                    <file> 7</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 1</file>
+                    <file> 13</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 31</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Libreria\system_stm32f30x.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 15</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 16</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
@@ -85,58 +87,56 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 7 35 16 17 23 20 18 14 26 30 21 24 19 28</file>
+                    <file> 5 34 28 8 22 14 18 17 21 25 6 23 26 24</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Libreria\system_stm32f30x.c</name>
+            <name>$PROJ_DIR$\..\Libreria\startup_stm32f30x.s</name>
             <outputs>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 2</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 6</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 34</file>
+                    <name>AARM</name>
+                    <file> 27</file>
                 </tool>
             </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 7 35 16 17 23 20 18 14 26 30 21 24 19 28</file>
-                </tool>
-            </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Libreria\stm32f30x_it.c</name>
+            <name>$PROJ_DIR$\main.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 13</file>
+                    <file> 9</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 3</file>
+                    <file> 12</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
                     <file> 32</file>
                 </tool>
             </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 5 34 28 8 22 14 18 17 21 25 6 23 26 24</file>
+                </tool>
+            </inputs>
         </file>
         <file>
-            <name>[ROOT_NODE]</name>
+            <name>$PROJ_DIR$\Debug\Exe\SensoreTemperatura.out</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 8 31</file>
+                    <file> 30</file>
                 </tool>
             </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 10 9 27 7 15 19 29 35 20</file>
+                </tool>
+            </inputs>
         </file>
     </configuration>
     <configuration>
