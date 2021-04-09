@@ -33,9 +33,9 @@ void main()
   
   //Configurazione ADC
   ADC1->CFGR |= ADC_CFGR_CONT;
-  ADC1->SQR1 = ADC_SQR1_SQ1_2;
   ADC1->SQR1 &= ~ADC_SQR1_L;
-  ADC1->SMPR2 |= ADC_SMPR2_SMP16;
+  ADC1->SQR1 = ADC_SQR1_SQ1_4;
+  ADC1->SMPR2 |= ADC_SMPR2_SMP16_1;
   
   //Conversione
   ADC1->CR |= ADC_CR_ADSTART;

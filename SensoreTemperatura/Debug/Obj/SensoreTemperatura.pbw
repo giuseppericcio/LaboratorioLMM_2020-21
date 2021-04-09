@@ -86588,16 +86588,58 @@
     "scope": null
   },
   {
+    "ID": "c:main.c@34@macro@V",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "V",
+    "location": {
+      "column": "9",
+      "line": "3",
+      "path": "C:\\Users\\GiuseppeRiccio\\Documents\\LaboratorioLMM\\SensoreTemperatura\\main.c"
+    },
+    "name": "V",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@50@macro@slope",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "slope",
+    "location": {
+      "column": "9",
+      "line": "4",
+      "path": "C:\\Users\\GiuseppeRiccio\\Documents\\LaboratorioLMM\\SensoreTemperatura\\main.c"
+    },
+    "name": "slope",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@tensione",
     "What": "Variable",
     "defdec": "Dec",
     "display": "tensione",
     "location": {
       "column": "7",
-      "line": "3",
+      "line": "6",
       "path": "C:\\Users\\GiuseppeRiccio\\Documents\\LaboratorioLMM\\SensoreTemperatura\\main.c"
     },
     "name": "tensione",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@temperatura",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "temperatura",
+    "location": {
+      "column": "7",
+      "line": "7",
+      "path": "C:\\Users\\GiuseppeRiccio\\Documents\\LaboratorioLMM\\SensoreTemperatura\\main.c"
+    },
+    "name": "temperatura",
     "origin": "project_file",
     "scope": null
   },
@@ -86608,7 +86650,7 @@
     "display": "void main(void)",
     "location": {
       "column": "6",
-      "line": "5",
+      "line": "9",
       "path": "C:\\Users\\GiuseppeRiccio\\Documents\\LaboratorioLMM\\SensoreTemperatura\\main.c"
     },
     "name": "main",
@@ -86616,13 +86658,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@386@F@main@i",
+    "ID": "c:main.c@408@F@main@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "11",
-      "line": "18",
+      "line": "21",
       "path": "C:\\Users\\GiuseppeRiccio\\Documents\\LaboratorioLMM\\SensoreTemperatura\\main.c"
     },
     "name": "i",
